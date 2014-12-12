@@ -12,7 +12,8 @@ var AudioManager = new function () {
 	var channel_max = 10;
 	this.channels = new Array();
 	for (a = 0; a < channel_max; a++) {
-		this.channels[a] = new Audio();
+	    this.channels[a] = new Audio();
+	    this.channels[a].volume = 0.5;
 		this.channels[a].timeFinished = -1;
 	}
 	

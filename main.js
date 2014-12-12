@@ -51,6 +51,7 @@ function loadSounds() {
     }, onLoaded);
 
     music = new Audio("sounds/roundball.mp3");
+    music.volume = 0.5;
     music.play();
     music.loop = true;
 }
